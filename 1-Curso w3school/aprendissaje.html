@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web 1</title>
+    <style>
+        table, th, td {
+            border:1px solid black;
+
+        }
+ 
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+             <tr>
+                <th>Producto</th>
+                 <th>Precio</th>
+             </tr>
+        </thead>
+         <tbody>
+            <tr>
+                <td>Hot marks</td>
+                <td>Gratis</td>
+         </tr>
+          <tr>
+           <td>Cursos</td>
+           <td>20$</td>
+       </tr>
+       <tr>
+           <td>Cursos HTML en internet</td>
+           <td>212$</td>
+       </tr>
+         </tbody>
+         <tfoot>
+            <td></td>
+            <td>total 232$</td>
+         </tfoot>
+    </table>
+    <!--ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--ol es lista ordenada-->
+    <ol>
+        <li value="30">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+        <!--puedes anidar lista dentro de una lista-->
+            <ol>
+                <li style="list-style-type:lower-roman">sub Elemento 2</li>
+                <!-- style list le puedes cambiar ya sea numero, siimbolo 
+                o figuras a las listas anidadas-->
+                <li style="list-style-type:lower-roman">sub Elemento 3</li>
+                <li style="list-style-type:lower-roman">sub Elemento 4</li>
+
+            </ol>
+        </li>
+    </ol>
+
+
+    <form action="/formulario" method="get">
+        <!--foron action, es para indicar el fomulario y method
+        indicar la ruta donde se ira la informacion del formulario-->
+        <label for="nombre">Nombre</label>
+        <!--label es lo que aparecera al
+             lado del cuadro de formulario -->
+        <input value="Roberto" type="text" id="nombre" name="nombre" placeholder="nombre" />
+        <!--este es el formulario, contiene el Type, placeholder
+        que es el sombreado, value un texto predertminado y el id, que seria 
+        la informacion que estas ingresado -->
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="Mendoza" type="text" id="apellido" name="Apellido" placeholder="Apellido" />
+        <br>
+        <!--br es el salto de lineas-->
+        <label for="comentario">comentario</label>
+        <textarea cols="20" rows="10" id="comentario" placeholder="ingrese comentario" name="ingrese comentario">Ingrese su comentario</textarea>
+        <br>
+        <input type="submit" />
+        <!--Input de tipo submit no puede ingresar mas etiquetas-->
+        <button type="button">tipo boton</button>
+        <button type="reset">tipo reset</button>
+        <button type="submit">tipo submit</button>
+        <!--Es mejor la etiqueta de button por que 
+            se le pueden ingresar mas etiquetas es las personalizable-->
+     </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Probando todas las etiquetas</h6>
+    <p>Rodo feliz aprendiendo</p>
+    <p>Sigue feliz aprendiendo</p>
+    <hr>
+    <h2>Rodo el pro</h2>
+    <p>
+        sigo colocando en <span style="color:blue;">
+        lo que estoy <br>
+        aprendiendo</span> 
+    </p>
+    <!--este texto es un comentario que no se vera
+    en el navegador pero si en el codigo HTML
+     y en la consola del navegador-->
+     <a target="_blank" href="https://www.google.com">Ir a google</a>
+     <hr>
+     <img src="img/Sr.rodo.png" width="400" height="400" />
+</body>
+</html>
