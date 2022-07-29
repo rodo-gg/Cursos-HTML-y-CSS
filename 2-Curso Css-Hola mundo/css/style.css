@@ -1,0 +1,181 @@
+#titulo {
+  color: tomato;
+}
+
+p.texto {
+  color: slateblue;
+}
+
+p.especial {
+  color: mediumaquamarine;
+}
+
+div p {
+  color: aquamarine;
+}
+
+div h2,
+div h3 {
+  color: brown;
+}
+
+* {
+  font-size: 24px;
+  /* color:black; */
+}
+
+/*Esto es un comentanraio en css*/
+/*
+.color {
+    color: #ff0000;
+}
+.color {
+    color: rgb(8, 133, 150);
+}
+*/
+.color {
+  /* border: 5px red outset; */
+  /*
+    dotted
+    daseh
+    solid
+    groove
+    ridge
+    inset
+    outset
+    none
+    hideen*/
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 5px;
+}
+
+#fondo {
+  background-color: rgb(176, 250, 176);
+  /*opacity: 0.3;*/
+  height: 400px;
+  background: rgb(176, 250, 176) url('../img/cheems.png') repeat-y left center / 100px 100px;
+}
+
+.margen {
+  background-color: chocolate;
+  margin: 15px; /*Margen afuera del elemento*/
+  padding: 30px 15px 5px; /*Margen dejtro del elemento*/
+  border: solid 2px black;
+  height: 200px;
+  width: 50px;
+  overflow: scroll;
+  outline: 1px solid red;
+}
+
+.text {
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  text-decoration: overline;
+  text-shadow: 3px 5px 5px blue;
+}
+
+a:link {
+  color: blueviolet;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active {
+  color: red;
+}
+
+ul {
+  background-color: cyan;
+  list-style-type: circle;
+  /* padding-left: 0; */
+  /* list-style-position: inside; */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: solid 1px #eee;
+  padding: 5px;
+}
+
+th {
+  background-color: tomato;
+  color: white;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tr:hover {
+  background-color: #aaa;
+  cursor: pointer;
+}
+
+span {
+  display: block; /*Fuerza que los elemntos partan en una nueva 
+     linea*/
+  /* display: none;
+     visibility: hidden; */
+  max-width: 300px;
+  background-color: red;
+}
+
+.inline {
+  display: inline; /* Los elementos que agregues no comenzaran
+    nueva linea; las etiquetas que vienen con inline por defecto son
+    span, links, img*/
+}
+
+#position {
+  position: sticky;
+  left: 20px;
+  top: 25px;
+}
+
+.left {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.right {
+  float: right;
+}
+
+.container {
+  height: 200px;
+}
+
+.column {
+  margin: 0;
+  padding: 10px 0px;
+  width: 33.3%;
+}
+
+.inline-block {
+  display: inline-block;
+  height: 55px;
+  background-color: red;
+}
+
+.center {
+  padding: 50px 0;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  background-color: aqua;
+}
