@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <title>Document</title>
+      <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+      <h2 id="titulo-principal"> AppDeGatos</h2>
+      <main>
+        <h3> Imagenes de gatos</h3>
+        <!--TODO: Agregar enlace a imagenes de gatos -->
+        <p>Haz click aqui para ver mas <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/main" target="_blank" rel="noopener noreferrer">imagenes de gatos</a></p>
+        <!--El atributo rel noopener noreferrer es por motivos de seguridad para posibles hackeos-->
+        <img src="Iimg/mini cheems.png" alt="Un lindo perrito inu" class="imagen-cheems"> 
+        <!-- alt seria un texto alternativo en caso de haya una falla en la concexion-->
+
+        <!-- Listas no ordenadas -->
+        <div>
+          <p>Lista de actitudes cheems</p>
+          <ul id="lista-cheems">
+              <li>Cheems samurari</li>
+              <li>Cheems sanior</li>
+              <li>Cheems chino</li>
+          </ul> 
+
+          <!-- Listas ordenadas -->
+          <p>Lista de cheem bellaco</p>
+          <ol>
+              <li>Cheemm 1</li>
+              <li>Cheemm 2</li>
+              <li>Cheemm 3</li>
+          </ol>
+        </div>
+
+        <form action="/enviar-respuesta"> <!--target="_blank se le podria agregar para que anriera en otra pestaña-->
+
+          <!-- Botones de radio -->
+          <label for="interior"><input id="interior" type="radio" value="interior" name="interior-exterior" checked>interior</label><br>
+          <!--Se le coloca un id al elemento y luego un for y nombre del elemento, para que solo se seleccione uno se coloca otro atributo
+          que seria el de name-->
+          <label for="exterior"><input id="exterior" type="radio" value="exterior" name="interior-exterior">exterior</label><br>
+
+          <!-- casillas de verificacion -->
+          <label for="carinoso">
+            <input id="carinoso" type="checkbox" value="carinoso" name="personalidad" checked>carinoso
+          </label>
+          <br>
+          <label for="perezoso">
+            <input id="perezoso" type="checkbox" value="perezoso" name="personalidad">Perezoso
+          </label>
+          <br>
+          <label for="energico">
+            <input id="energico" type="checkbox" value="energico" name="personalidad">Energico
+          </label>
+          <br>
+
+            <!-- Boton de enviar -->
+          <input type="text" placeholder="URL de tu inu" required><br> <!-- el atributo required es para que el campo sea obligatorio para enviar-->
+          <button type="submit">Enviar</button>
+        </form>       
+      </main>
+      <footer>
+        <p> <small>Sin Derechos de Autor - <a href="https://www.instagram.com/rodo_gg/" target="_blank">Rodo_gg</a></small></p>
+      </footer>
+    </body>
+</html>
